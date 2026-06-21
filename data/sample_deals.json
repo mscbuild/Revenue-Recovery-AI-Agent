@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "customer": "Acme Corp",
+    "value": 50000,
+    "stage": "Negotiation",
+    "last_contact_days": 20
+  }
+]
