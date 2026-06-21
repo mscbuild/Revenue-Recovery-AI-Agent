@@ -1,0 +1,8 @@
+Rank all alerts by business impact.
+
+Consider:
+- Revenue at risk
+- Urgency
+- Likelihood of recovery
+
+Return sorted action list.
