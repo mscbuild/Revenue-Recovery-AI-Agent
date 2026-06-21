@@ -16,23 +16,17 @@ It transforms raw business data into prioritized revenue recovery actions with e
 ```mermaid
 graph TD
 A[CRM Data Input] --> B[CLI / API Layer]
-
 B --> C[Revenue Recovery Agent]
-
 C --> D[Analyzer Service]
 D --> E[Business Rules Engine]
 D --> F[Scoring Engine]
-
 E --> G[Risk Detection]
 F --> H[Priority Scoring]
-
 G --> I[Alert Generator]
 H --> I
-
 I --> J[Reporter Service]
 J --> K[Console Output]
 J --> L[CSV Export]
-
 C --> M[Logger Service]
 M --> N[Observability Logs]
 
