@@ -12,8 +12,8 @@ The Revenue Recovery AI Agent is an autonomous decision system that analyzes CRM
 It transforms raw business data into prioritized revenue recovery actions with estimated financial impact.
 
 # 🏗️ System Architecture
-```mermaid
 
+```mermaid
 graph TD
 
 A[CRM Data Input] --> B[CLI / API Layer]
@@ -36,7 +36,8 @@ J --> L[CSV Export]
 
 C --> M[Logger Service]
 M --> N[Observability Logs]
-```
+
+---
 
 # 📌 Project Description
 
