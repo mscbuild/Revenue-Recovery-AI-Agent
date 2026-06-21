@@ -1,0 +1,9 @@
+Analyze sales deals and identify those at risk.
+
+A deal is risky if:
+- No customer contact for more than 14 days
+
+Output:
+- Risk explanation
+- Estimated revenue loss
+- Recommended action
