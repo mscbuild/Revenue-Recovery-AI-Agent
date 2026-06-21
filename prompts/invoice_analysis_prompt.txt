@@ -1,0 +1,8 @@
+Analyze invoices and detect overdue payments.
+
+A payment is at risk if:
+- Overdue more than 30 days
+
+Output:
+- Risk value
+- Collection recommendation
