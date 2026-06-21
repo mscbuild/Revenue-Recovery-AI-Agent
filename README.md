@@ -40,6 +40,7 @@ M --> N[Observability Logs]
 
 ## Agent Execution Flow
 
+```mermaid
 sequenceDiagram
 participant User
 participant API
@@ -56,6 +57,7 @@ Rules-->>Analyzer: Risk Scores
 Analyzer-->>Agent: Alerts
 Agent->>Reporter: Generate Report
 Reporter-->>User: Prioritized Output
+```
 
 ## 📌 Project Description
 
