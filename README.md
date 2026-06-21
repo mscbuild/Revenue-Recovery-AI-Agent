@@ -254,6 +254,14 @@ Recommended production upgrades:
 
 - Structured logging via logger.py
 - Event-level tracking for all alerts
+- Alert-level audit trail
+
+```mermaid
+ graph TD
+A[Agent Execution] --> B[Structured Logs]
+B --> C[Monitoring System]
+C --> D[Alerts / Dashboards]
+```  
 
 # 🧠 Future Improvements
 
