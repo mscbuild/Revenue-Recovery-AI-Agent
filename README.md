@@ -37,7 +37,25 @@ J --> L[CSV Export]
 C --> M[Logger Service]
 M --> N[Observability Logs] 
 ``` 
- 
+
+## Agent Execution Flow
+
+sequenceDiagram
+participant User
+participant API
+participant Agent
+participant Analyzer
+participant Rules
+participant Reporter
+
+User->>API: Send CRM Data
+API->>Agent: Start Analysis
+Agent->>Analyzer: Process Deals
+Analyzer->>Rules: Evaluate Risk
+Rules-->>Analyzer: Risk Scores
+Analyzer-->>Agent: Alerts
+Agent->>Reporter: Generate Report
+Reporter-->>User: Prioritized Output
 
 ## 📌 Project Description
 
