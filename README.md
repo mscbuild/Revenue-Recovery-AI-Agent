@@ -163,7 +163,7 @@ python run.py
 
 # 3. Run API Server (Optional)
 ~~~bash
-uvicorn app.api.main:app --reload
+uvicorn app.api.main:app --reload --port 8000
 ~~~
 
 # 4. Example API Request
