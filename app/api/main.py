@@ -1,15 +1,14 @@
 from fastapi import FastAPI
-from app.core.agent import RevenueRecoveryAgent
+from app.api.routes import router
 
-app = FastAPI(title="Revenue Recovery AI")
+app = FastAPI(
+    title="Revenue Recovery AI API",
+    version="1.0.0"
+)
 
-@app.post("/analyze")
-def analyze(payload: dict):
-    agent = RevenueRecoveryAgent()
+app.include_router(router)
 
-    agent.analyze_deals(payload.get("deals", []))
-    agent.analyze_invoices(payload.get("invoices", []))
 
-    return {
-        "alerts": agent.get_alerts()
-    }
+@app.get("/")
+def root():
+    return {"status": "Revenue Recovery API is running"}
