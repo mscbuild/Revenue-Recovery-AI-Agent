@@ -183,9 +183,9 @@ POST /analyze
 }
 ~~~
 
-# 6.interactive demonstration
+# 6. interactive demonstration
 ~~~bash
-streamlit run demo/streamlit_app.py
+streamlit run ui/streamlit_app.py
 ~~~
 
 # 7. Testing
