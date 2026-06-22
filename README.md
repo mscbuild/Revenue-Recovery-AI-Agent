@@ -183,7 +183,12 @@ POST /analyze
 }
 ~~~
 
-# 6. Testing
+# 6.interactive demonstration
+~~~bash
+streamlit run demo/streamlit_app.py
+~~~
+
+# 7. Testing
 ~~~bash
 pytest tests/
 ~~~
