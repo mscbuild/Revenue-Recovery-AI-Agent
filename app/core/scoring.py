@@ -14,3 +14,11 @@ def normalize_risk(score: float) -> str:
     elif score >= 0.4:
         return "medium"
     return "low"
+
+
+def risk_bucket(score: float) -> dict:
+    if score >= 0.75:
+        return {"level": "high", "color": "red"}
+    elif score >= 0.4:
+        return {"level": "medium", "color": "orange"}
+    return {"level": "low", "color": "green"}
