@@ -84,6 +84,10 @@ revenue-recovery-ai/
 │   │   ├── rules.py
 │   │   ├── models.py
 │   │   └── scoring.py
+├── demo/
+│   ├── streamlit_app.py   ← interactive demonstration
+│   ├── demo_data.py       ← generating/loading examples
+│   └── utils.py
 │   │
 │   ├── services/
 │   │   ├── analyzer.py
