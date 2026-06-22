@@ -1,8 +1,11 @@
-def priority_score(risk_value, confidence=0.9):
+def priority_score(risk_value: float, impact: float, confidence: float = 0.9) -> float:
     """
-    Combines financial impact + confidence into a single score.
+    Weighted priority score combining:
+    - risk probability
+    - financial impact
+    - model confidence
     """
-    return risk_value * confidence
+    return risk_value * impact * confidence
 
 
 def normalize_risk(score: float) -> str:
