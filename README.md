@@ -84,10 +84,6 @@ revenue-recovery-ai/
 │   │   ├── rules.py
 │   │   ├── models.py
 │   │   └── scoring.py
-├── demo/
-│   ├── streamlit_app.py   ← interactive demonstration
-│   ├── demo_data.py       ← generating/loading examples
-│   └── utils.py
 │   │
 │   ├── services/
 │   │   ├── analyzer.py
@@ -96,10 +92,14 @@ revenue-recovery-ai/
 │   │   └── logger.py
 │   │
 │   ├── api/
-│   │   └── main.py
+│   │   ├── main.py        ← FastAPI entrypoint
+│   │   ├── routes.py      ← API endpoints
+│   │   └── schemas.py     ← Pydantic models
 │   │
 │   ├── cli.py
 │   └── config.py
+├── ui/
+│   └── streamlit_app.py   ← frontend
 │
 ├── data/
 │   ├── sample_deals.json
