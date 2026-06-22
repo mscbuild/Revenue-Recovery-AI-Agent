@@ -4,4 +4,4 @@ uvicorn[standard]
 pytest
 httpx
 python-multipart
-
+streamlit
